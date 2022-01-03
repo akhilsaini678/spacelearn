@@ -136,4 +136,4 @@ EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
 
 
-CSRF_TRUSTED_ORIGINS = ['aakashganga.herokuapp.com']
+CSRF_TRUSTED_ORIGINS = ['https://aakashganga.herokuapp.com']
