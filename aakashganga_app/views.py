@@ -83,15 +83,11 @@ def fun_contact(request):
 
         if not re.match(r'[^@]+@[^@]+\.[^@]+', email):
             msg = 'Invalid email address !'
-        elif not re.match(r'[A-Za-z0-9]+', name):
-            msg = 'Name must contain only characters and numbers !'
-        elif not name or not message or not email:
-            msg = 'Please type some message first !'
         else:
             message = 'Name : '+ name +'\nEmail : '+email+'\nMessage : '+message
             send_mail('Message From Space Learn',message,'',[myemail])
             msg = 'Your message have been sent successfully. Hope that I see it soon.'
-            
+
     return render(request,'Contact.html',{'msg':msg})
 
 def fun_login(request):
