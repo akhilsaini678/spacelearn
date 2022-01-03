@@ -91,13 +91,7 @@ def fun_contact(request):
             message = 'Name : '+ name +'\nEmail : '+email+'\nMessage : '+message
             send_mail('Message From Space Learn',message,'',[myemail])
             msg = 'Your message have been sent successfully. Hope that I see it soon.'
-        # msg = Message("Message From Space Learn", sender = email, recipients = ['akhilsainiwork@gmail.com'])
-        # msg.body = message
-        # data = {
-        #     'name':name,
-        #     'email':email,
-        #     'message':message
-        # }
+            
     return render(request,'Contact.html',{'msg':msg})
 
 def fun_login(request):
