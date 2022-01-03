@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from django.core.mail import send_mail
+import re
 
 # class datas():
 #     "Stores name and place pairs"
@@ -72,7 +74,31 @@ def fun_andromeda(request):
     return render(request,'Andromeda.html',{})
 
 def fun_contact(request):
-    return render(request,'Contact.html',{})
+    msg = ''
+    if request.method == 'POST':
+        name = request.POST.get('Name')
+        email = request.POST.get('Email')
+        message = request.POST.get('Message')
+        myemail = 'akhilsainiwork@gmail.com'
+
+        if not re.match(r'[^@]+@[^@]+\.[^@]+', email):
+            msg = 'Invalid email address !'
+        elif not re.match(r'[A-Za-z0-9]+', name):
+            msg = 'Name must contain only characters and numbers !'
+        elif not name or not message or not email:
+            msg = 'Please type some message first !'
+        else:
+            message = 'Name : '+ name +'\nEmail : '+email+'\nMessage : '+message
+            send_mail('Message From Space Learn',message,'',[myemail])
+            msg = 'Your message have been sent successfully. Hope that I see it soon.'
+        # msg = Message("Message From Space Learn", sender = email, recipients = ['akhilsainiwork@gmail.com'])
+        # msg.body = message
+        # data = {
+        #     'name':name,
+        #     'email':email,
+        #     'message':message
+        # }
+    return render(request,'Contact.html',{'msg':msg})
 
 def fun_login(request):
     return render(request,'Login.html',{})
