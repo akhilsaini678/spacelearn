@@ -1,0 +1,150 @@
+<!-- This is Base File -->
+{% extends 'planets.html' %}
+{% load static %}
+
+<!-- This is Title -->
+{% block title %} Saturn {% endblock %} {% block title1 %} Saturn {% endblock %}
+
+
+<!-- This is image -->
+{% block main_image %}
+<img class="main_img" src="{% static 'Images/Saturn_img.png' %}" alt="Saturn Image" width="300px" height="300px" style="border-radius: 10px;"> {% endblock %}
+<!-- This is theroy part. -->
+
+{% block main_summary %} Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth. It only has one-eighth the average density
+of Earth; however, with its larger volume, Saturn is over 95 times more massive.If compared, it is easy to see why Saturn and Jupiter have been designated as relatives. From atmospheric composition to rotation, these two planets are extremely similar.
+Because of these factors, Saturn was named after the father of the god Jupiter in Roman mythology. {% endblock %}
+
+<!-- Million -->
+{% block million %} billion {% endblock %}
+
+    <!-- This is Table -->
+    <!-- Age -->
+    {% block age %} {{ data.2 }} {% endblock %}
+    <!-- Speed -->
+    {% block speed %} {{ data.3 }} {% endblock %}
+    <!-- Mass -->
+    {% block mass %} {{ data.4|safe }} {% endblock %}
+    <!-- Radius -->
+    {% block radius %} {{ data.5 }} {% endblock %} {% block radius1 %} 2439.7 {% endblock %}
+    <!-- Surface Temperature -->
+    {% block surface_temperature %} {{ data.6 }} {% endblock %}
+    <!-- Density -->
+    {% block density %} {{ data.7|safe }} {% endblock %}
+    <!-- Distance from Sun -->
+    {% block distance_from_sun %} {{ data.8 }} {% endblock %} {% block distance_from_sun1 %} 58 {% endblock %}
+    <!-- Gravity -->
+    {% block gravity %} {{ data.9|safe }} {% endblock %}
+    <!-- Number of Satellites -->
+    {% block number_of_satellites %} {{ data.10 }} {% endblock %}
+    <!-- Length of day -->
+    {% block length_of_day %} {{ data.11 }} {% endblock %}
+    <!-- Revolution -->
+    {% block revolution %} {{ data.12 }} {% endblock %}
+    <!-- Axis Tilt -->
+    {% block axis_tilt %} {{ data.13 }} {% endblock %}
+    
+{% block content %}
+<div class="mains2">
+    <div class="one2">
+        <h1 class="headleft">Formation</h1>
+        <p>
+            Saturn took shape when the rest of the solar system formed about 4.5 billion years ago, when gravity pulled swirling gas and dust in to become this gas giant. About 4 billion years ago, Saturn settled into its current position in the outer solar system,
+            where it is the sixth planet from the Sun. Like Jupiter, Saturn is mostly made of hydrogen and helium, the same two main components that make up the Sun.
+        </p>
+        <h1 class="headleft">Structure</h1>
+        <p>
+            Like Jupiter, Saturn is made mostly of hydrogen and helium. At Saturn's center is a dense core of metals like iron and nickel surrounded by rocky material and other compounds solidified by the intense pressure and heat. It is enveloped by liquid metallic
+            hydrogen inside a layer of liquid hydrogen—similar to Jupiter's core but considerably smaller.
+        </p>
+        <p>It's hard to imagine, but Saturn is the only planet in our solar system whose average density is less than water. The giant gas planet could float in a bathtub if such a colossal thing existed.
+        </p>
+
+        <h1 class="headleft">Size and Distance</h1>
+        <p>
+            With a radius of 36,183.7 miles (58,232 kilometers), Saturn is 9 times wider than Earth. If Earth were the size of a nickel, Saturn would be about as big as a volleyball.
+        </p>
+        <p>From an average distance of 886 million miles (1.4 billion kilometers), Saturn is 9.5 astronomical units away from the Sun. One astronomical unit (abbreviated as AU), is the distance from the Sun to Earth. From this distance, it takes sunlight
+            80 minutes to travel from the Sun to Saturn.
+        </p>
+        <h1 class="headleft">Orbit and Rotation</h1>
+        <p>
+            Saturn has the second-shortest day in the solar system. One day on Saturn takes only 10.7 hours (the time it takes for Saturn to rotate or spin around once), and Saturn makes a complete orbit around the Sun (a year in Saturnian time) in about 29.4 Earth
+            years (10,756 Earth days).
+        </p>
+        <p>Its axis is tilted by 26.73 degrees with respect to its orbit around the Sun, which is similar to Earth's 23.5-degree tilt. This means that, like Earth, Saturn experiences seasons.
+        </p>
+        <h1 class="headleft">Atmosphere</h1>
+        <p>
+            Saturn is blanketed with clouds that appear as faint stripes, jet streams and storms. The planet is many different shades of yellow, brown and grey.
+        </p>
+        <p>Winds in the upper atmosphere reach 1,600 feet per second (500 meters per second) in the equatorial region. In contrast, the strongest hurricane-force winds on Earth top out at about 360 feet per second (110 meters per second). And the pressure—the
+            same kind you feel when you dive deep underwater—is so powerful it squeezes gas into liquid.
+        </p>
+        <p>Saturn's north pole has an interesting atmospheric feature—a six-sided jet stream. This hexagon-shaped pattern was first noticed in images from the Voyager I spacecraft and has been more closely observed by the Cassini spacecraft since. Spanning
+            about 20,000 miles (30,000 kilometers) across, the hexagon is a wavy jet stream of 200-mile-per-hour winds (about 322 kilometers per hour) with a massive, rotating storm at the center. There is no weather feature like it anywhere else in the
+            solar system.
+        </p>
+
+        <h1 class="headleft">Composition of the Saturn</h1>
+        <p>
+            Saturn is mainly consists of Hydrogen and Helium.
+        </p>
+        <p>
+            <ul class="list7">
+                <li class="hydrogen">Hydrogen<br>75%</li>
+                <li class="helium">Helium<br>25%</li>
+            </ul>
+        </p>
+
+
+        <h1 class="headleft">Facts about the Earth</h1>
+        <h3>1). Saturn is the sixth planet from the Sun.</h3>
+        <p> Last of the planets known to ancient civilizations. It was known to the Babylonians and Far Eastern observer.Saturn is one of five planets able to be seen with the naked eye. It is also the fifth brightest object in the solar system.</p>
+        <hr>
+        <h3>2). In Roman mythology Saturn was the father of Jupiter, king of the gods.</h3>
+        <p>This relationship makes sense given that the planets Saturn and Jupiter are similar in so many respects, including size and composition. The Greek counterpart is known as Cronus.</p>
+        <hr>
+        <h3>3). Saturn gives off more energy than it receives from the Sun. </h3>
+        <p>This unusual quality is believed to be generated from the gravitational compression of the planet combined with the friction from large amount of helium found within its atmosphere.</p>
+        <hr>
+        <h3>4). Saturn has the fastest winds of any other planet in our solar system.</h3>
+        <p>These winds have been measured at approximately 1,800 km per hour (1,100 miles per hour).</p>
+        <hr>
+        <h3>5). Saturn is the least dense planet in the solar system.</h3>
+        <p>It is made mostly of hydrogen and has a density which is less than water – which technically means that Saturn would float. The layers of hydrogen get denser further into the planet, eventually becoming metallic and leading to a hot interior core.</p>
+        <hr>
+        <h3>6). Saturn’s moon Titan is the second largest moon in the Solar System.</h3>
+        <p> It has a complex and dense atmosphere made mostly of nitrogen and is composed from water ice and rock. The frozen surface of Titan has liquid methane lakes and a landscape which is covered with frozen nitrogen. It is possible that Titan may be
+            a harbour for life – but that life would not be similar to life on Earth.</p>
+        <hr>
+        <h3>7). Saturn has been visited by four spacecraft.</h3>
+        <p>With a polar diameter that is 90% of its equatorial diameter, Saturn is the flattest of all the planets. This is because of the planet’s low density and fast rotation speed – it takes Saturn 10 hours and 34 minutes to turn on its axis.</p>
+        <hr>
+        <h3>8). Saturn is the flattest of the eight planets. </h3>
+        <p>compared with other solid bodies in our solar system. This is because Earth is geologically active and has processes like tectonics and erosion that reshape its surface.</p>
+        <hr>
+        <h3>9). The most common nickname for Saturn is “The Ringed Planet”. </h3>
+        <p>A nickname arising from the large, beautiful and extensive ring system that encircles the planet. These rings are mostly made from chunks of ice and carbonaceous dust. They stretch out more than 12,700 km from the planet but are only a mere 20
+            meters thick.</p>
+        <hr>
+        <h3>Some other facts :</h3>
+        <ul style="padding-left: 3vw;">
+            <li>
+                <p>The magnetic field on Saturn is slighter weaker than Earth’s magnetic field. Saturn’s magnetic field strength is around one-twentieth the strength of Jupiter’s.</p>
+            </li>
+            <li>
+                <p>Saturn is known as a gas giant, but scientists believe it has a solid rocky core surrounded by hydrogen and helium.</p>
+            </li>
+            <li>
+                <p>Saturn and Jupiter combined account for 92% of the entire planetary mass in the solar system.</p>
+            </li>
+            <li>
+                <p>The interior of Saturn is very hot, reaching temperatures of up to 11,700°C (21,000 °F).</p>
+            </li>
+        </ul>
+        <hr>
+    </div>
+    <div class="two2"></div>
+</div>
+{% endblock %}

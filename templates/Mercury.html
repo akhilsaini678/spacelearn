@@ -1,0 +1,144 @@
+<!-- This is Base File -->
+{% extends 'planets.html' %}
+{% load static %}
+
+<!-- This is Title -->
+{% block title %} Mercury {% endblock %} {% block title1 %} Mercury {% endblock %}
+
+
+<!-- This is image -->
+{% block main_image %}
+<img class="main_img" src="{% static 'Images/Mercury_img.png' %}" alt="Mercury Image" width="300px" height="300px" style="border-radius: 10px;"> {% endblock %}
+<!-- This is theroy part. -->
+
+{% block main_summary %} Mercury is the smallest planet in the Solar System and the closest to the Sun. Mercury is only slightly larger than Earth's Moon. From the surface of Mercury, the Sun would appear more than three times as large as it does when
+viewed from Earth, and the sunlight would be as much as seven times brighter.</p>
+<p> Despite its proximity to the Sun, Mercury is not the hottest planet in our solar system – that title belongs to nearby Venus, thanks to its dense atmosphere.
+</p>
+<p class="heads">It is named for the Roman god Mercury, the messenger to the gods – most likely related to the orbiting speed of the planet. {% endblock %}
+
+
+    <!-- Million -->
+    {% block million %} million {% endblock %}
+
+    <!-- This is Table -->
+    <!-- Age -->
+    {% block age %} {{ data.2 }} {% endblock %}
+    <!-- Speed -->
+    {% block speed %} {{ data.3 }} {% endblock %}
+    <!-- Mass -->
+    {% block mass %} {{ data.4|safe }} {% endblock %}
+    <!-- Radius -->
+    {% block radius %} {{ data.5 }} {% endblock %} {% block radius1 %} 2439.7 {% endblock %}
+    <!-- Surface Temperature -->
+    {% block surface_temperature %} {{ data.6 }} {% endblock %}
+    <!-- Density -->
+    {% block density %} {{ data.7|safe }} {% endblock %}
+    <!-- Distance from Sun -->
+    {% block distance_from_sun %} {{ data.8 }} {% endblock %} {% block distance_from_sun1 %} 58 {% endblock %}
+    <!-- Gravity -->
+    {% block gravity %} {{ data.9|safe }} {% endblock %}
+    <!-- Number of Satellites -->
+    {% block number_of_satellites %} {{ data.10 }} {% endblock %}
+    <!-- Length of day -->
+    {% block length_of_day %} {{ data.11 }} {% endblock %}
+    <!-- Revolution -->
+    {% block revolution %} {{ data.12 }} {% endblock %}
+    <!-- Axis Tilt -->
+    {% block axis_tilt %} {{ data.13 }} {% endblock %}
+    
+
+    <!-- This is theroy part. -->
+    {% block content%}
+    <div class="mains2">
+        <div class="one2">
+            <h1 class="headleft">Formation</h1>
+            <p>
+                Mercury formed about 4.5 billion years ago when gravity pulled swirling gas and dust together to form this small planet nearest the Sun. Like its fellow terrestrial planets, Mercury has a central core, a rocky mantle and a solid crust.
+            </p>
+
+            <h1 class="headleft">Structure</h1>
+            <p>
+                Mercury is the second densest planet, after Earth. It has a large metallic core with a radius of about 1,289 miles (2,074 kilometers), about 85 percent of the planet's radius. There is evidence that it is partly molten, or liquid. Mercury's outer shell,
+                comparable to Earth's outer shell (called the mantle and crust), is only about 400 kilometers (250 miles) thick.
+            </p>
+
+            <h1 class="headleft">Size and Distance</h1>
+            <p>
+                With a radius of 1,516 miles (2,440 kilometers), Mercury is a little more than 1/3 the width of Earth. If Earth were the size of a nickel, Mercury would be about as big as a blueberry. From an average distance of 36 million miles (58 million kilometers),
+                Mercury is 0.4 astronomical units away from the Sun. From this distance, it takes sunlight 3.2 minutes to travel from the Sun to Mercury.
+            </p>
+
+            <h1 class="headleft">Orbit and Rotation</h1>
+            <p>
+                Mercury's highly eccentric, egg-shaped orbit takes the planet as close as 29 million miles (47 million kilometers) and as far as 43 million miles (70 million kilometers) from the Sun. It speeds around the Sun every 88 days, traveling through space at
+                nearly 29 miles (47 kilometers) per second, faster than any other planet.
+            </p>
+
+            <h1 class="headleft">Atmosphere</h1>
+            <p>
+                Instead of an atmosphere, Mercury possesses a thin exosphere made up of atoms blasted off the surface by the solar wind and striking meteoroids. Mercury's exosphere is composed mostly of oxygen, sodium, hydrogen, helium and potassium.
+            </p>
+
+            <h1 class="headleft">Composition of the Mercury</h1>
+            <div class="mercury_composition">
+                <img src="{% static 'Images/Mercury_internal.jpg' %}" alt="Mercury Core Image" width="350px" height="300px" style="border-radius: 10px;">
+                <p>
+                    Mercury composition is made up of metals and silicate material.</p>
+            </div>
+            <p>
+                <ul class="list2">
+                    <li class="hydrogen">Metal<br>70%</li>
+                    <li class="helium">Silicate<br>30%</li>
+                </ul>
+            </p>
+            <h1 class="headleft">Facts about the Mercury</h1>
+            <h3>1). Mercury has been known to humanity since ancient times.</h3>
+            <p> Although its discovery date is unknown, the first mentions of the planet are believed to be around 3000 BC by the Sumerians. Astronomers didn’t realize that Mercury was a planet until 1543 when Copernicus published his Sun-centered model of
+                the Solar System – putting the Sun as the centre of the solar system rather than the previously believed centre, the Earth.</p>
+            <hr>
+            <h3>2). A year in Mercury is 88 days, yet a Mercury day is 176 Earth days. </h3>
+            <p>Mercury is nearly tidally locked to the Sun – also known as a gravitational lock – and over time this has slowed the rotation of the planet to almost match its orbit around the Sun.</p>
+            <hr>
+            <h3>3). Mercury orbits so quickly around the Sun that early civilizations believed it was actually two different stars.</h3>
+            <p>One which appeared in the morning and another which appeared in the evening.</p>
+            <hr>
+            <h3>4). Mercury is the smallest planet in the solar system.</h3>
+            <p>With a diameter of 4,879 km and is one of five planets that is visible to the naked eye.</p>
+            <hr>
+            <h3>5). After the Earth, Mercury is the second densest planet.</h3>
+            <p>Despite its small size, Mercury is very dense because it is composed mainly of heavy metals and rock – the main characteristic of terrestrial planets.</p>
+            <hr>
+            <h3>6). The planet has just 38% of the gravity on Earth.</h3>
+            <p> This means that Mercury isn’t able to hold the atmosphere it has and it instead gets blown away by solar winds. However those same solar winds are also bringing in new gases, radioactive decay and dust from micrometeorites – replenishing the
+                atmosphere.
+            </p>
+            <hr>
+            <h3>7). Mercury is only the second hottest planet.</h3>
+            <p> Venus, though farther from the Sun than Mercury, actually experiences higher temperatures. This is because Mercury has no atmosphere to regulate temperature and results in the most extreme temperature change of all the planets – ranging from
+                -170°C (-280°F) during the night to 430°C (800°F) during the day.</p>
+            <hr>
+            <h3>8). Mercury has a very thin atmosphere.</h3>
+            <p>Which is made up of atoms from the surface of the planet that have been blown away by solar winds. As Mercury is so hot, these atoms quickly escape into space and so its atmosphere is constantly being replenished.</p>
+            <hr>
+            <h3>9). Only two spacecraft have ever visited Mercury.</h3>
+            <p>It is difficult to reach the planet due to its proximity to the Sun and any spacecraft visiting would need to travel 91 million kilometers into the Sun’s gravitational potential well.</p>
+            <p> The Mariner 10 visited during 1974-75, flying by Mercury three times and mapping half its surface. On March 24, 1975 it ran out of fuel and is still believed to be orbiting the Sun.</p>
+            <p> The MESSENGER probe was launched in 2004 to explore Mercury’s high density, its geological history, the nature of its magnetic field and more. Another mission, BepiColombo, is to be launched in 2015 by the European Space Agency and Japan is
+                expected to reach Mercury in 2019.</p>
+            <hr>
+            <h3>10). Mercury has more craters and impact marks that any other planet.</h3>
+            <p>The surface is similar to that of the Moon, as unlike most planets, Mercury isn’t geologically active and cannot “self heal” from impacts with asteroids and comets. Most of the Mercurian craters are named after famous writers and artists.
+                If a crater is larger than 250 km in diameter, it is known as a Basin. The largest Basin on Mercury, the Caloris Basin, is around 1,550 km in diameter and was discovered by the Mariner 10.</p>
+            <hr>
+            <h3>11). Temperature varies too much between day and night.</h3>
+            <p>No evidence for life has been found on Mercury. Daytime Temperatures can reach 430 degrees Celsius (800 degrees Fahrenheit) and drop to -180 degrees Celsius (-290 degrees Fahrenheit) at night. It is unlikely life (as we know it) could survive
+                on this planet.</p>
+            <hr>
+            <h3></h3>
+            <p></p>
+        </div>
+        <div class="two2"></div>
+    </div>
+
+    {% endblock %}

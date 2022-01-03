@@ -1,0 +1,144 @@
+<!-- This is base file -->
+{% extends 'navbar.html'%}
+{% load static %}
+
+<!-- This is content -->
+{% block content %}
+<!-- This is theroy part. -->
+<div class="mains2">
+    <div class="one2">
+        <h1 style="font-size: 64px;text-align: center;" class="headmain">Sun</h1><br>
+        <img class="main_img" src="{% static 'Images/Sun_img.png'%}" alt="Sun Image" width="300px" height="300px" style="border-radius: 10px;">
+        <p class="heads">The Sun is the star at the center of the Solar System. It is a nearly perfect sphere of hot plasma, heated to incandescence by nuclear fusion reactions in its core, radiating the energy mainly as visible light and infrared radiation. It is by
+            far the most important source of energy for life on Earth. Sun is also known as Sol , the name originates from ancient Roman's god of the Sun, Sol. From this name 'Sol' we get the term "Solar System", which means the system of Sun.</p>
+    </div>
+    <div class="two2"></div>
+</div>
+
+
+<div class="solar_system">
+    <table class="reveal">
+        <caption>Information</caption>
+        <tr>
+            <th class="reveal w3-mobile">Age<br> 4.603 billion years
+            </th>
+            <th class="reveal w3-mobile">Speed<br> 220 km per second
+            </th>
+            <th class="reveal w3-mobile">Mass<br> 1.989 × 10<sup>30</sup> kg
+            </th>
+        </tr>
+        <tr>
+            <th class="reveal w3-mobile">Radius<br>
+                <p id="radius_sun">696340</p>
+                <select name="radius" id="radius" onchange="fun_radius(value,'radius_sun',696340);">
+                        <option value="Kilometer" >KM</option>
+                        <option value="Miles">Miles</option>
+                    </select>
+            </th>
+            <th class="reveal w3-mobile">Volume<br> 1.412 x 10<sup>18</sup> km<sup>3
+                </th>
+                <th class="reveal w3-mobile">Density<br>
+                    1.622 x 10<sup>5</sup> kg per m<sup>3</sup>
+            </th>
+        </tr>
+        <tr>
+            <th class="reveal w3-mobile">Surface Temperature<br>
+                <p id="surface">5505</p>
+                <select name="temperature" id="temperature" onchange="fun_temperature(value,'surface',5505);">
+                    <option value="°C">°C</option>
+                    <option value="K">K</option>
+                    <option value="°F">°F</option>
+                    </select>
+            </th>
+            <th class="reveal w3-mobile">Internal Temperature<br>
+                <p id="internal">15000000</p>
+                <select name="temperature" id="temperature" onchange="fun_temperature(value,'internal',15000000);">
+                    <option value="°C">°C</option>
+                    <option value="K">K</option>
+                    <option value="°F">°F</option>
+                    </select>
+            </th>
+        </tr>
+    </table>
+</div>
+
+
+<div class="mains2">
+    <div class="one2">
+        <h1 class="headleft">Formation</h1>
+        <p>
+            The <strong>sun</strong> was born about 4.6 billion years ago. The sun and other solar system was formed from a giant roatating cloud of gas and dust which is known as solar nebula. After the nebula collapsed because of its gravity, it spun
+            and flattened into a disk.<br> The sun still have enough fuel to stay like now for another 5 billion year. After that it will turn into a white dwarf star. And after that it will slowly fade and turn into a dim cool object known black dwarf.
+        </p>
+
+        <h1 class="headleft">Size of the Sun</h1>
+        <p>
+            The <strong>sun</strong> is not the biggest star in the universe but it is pretty massive than most of the stars. The sun contains 99.86% of the total mass in the solar system. <br>The sun has a diameter of 1.4 million kilometers (870,000)
+            miles. The is almost 110 times larger than the diameter of <a href="Earth.html">Earth.</a> It means 1 million earth could fit inside the Sun.
+        </p>
+
+        <h1 class="headleft">Composition of the Sun</h1>
+        <p>
+            The sun is mostly made up of hydrogen and helium.
+            <ul class="list1">
+                <li class="hydrogen">Hydrogen<br>72%</li>
+                <li class="helium">Helium<br>26%</li>
+            </ul>
+        </p>
+        <p>In total, sun consist of 9 elements. For every 1 million atoms of hydrogen in the Sun, we have -
+            <ul style="padding-left: 3vw; font-size: 16px; font-weight: 600;">
+                <li>98,000 helium atom.</li>
+                <li>850 oxygen atom.</li>
+                <li>360 carbon atom.</li>
+                <li>120 neon atom.</li>
+                <li>110 nitrogen atom.</li>
+                <li>40 magnesium atom.</li>
+                <li>35 iron atom.</li>
+                <li>35 silicon atom.</li>
+            </ul>
+        </p>
+
+        <h1 class="headleft">Facts about the Sun</h1>
+        <h3>1). One day the Sun will consume the Earth.</h3>
+        <p> The Sun will continue to burn for about 130 million years after it burns through all of its hydrogen, instead burning helium. During this time it will expand to such a size that it will engulf <a href="Mercury.html">Mercury</a>, <a href="Venus.html">Venus</a>            , and <a href="Earth.html">Earth</a>. When it reaches this point, it will have become a red giant star.</p>
+        <hr>
+        <h3>2). The energy created by the Sun’s core is nuclear fusion.</h3>
+        <p>This huge amount of energy is produced when four hydrogen nuclei are combined into one helium nucleus.</p>
+        <hr>
+        <h3>3). The Sun is almost a perfect sphere.</h3>
+        <p>Considering the sheer size of the Sun, there is only a 10 km difference in its polar and equatorial diameters – this makes it the closest thing to a perfect sphere observed in nature.</p>
+        <hr>
+        <h3>4). The Sun is travelling at 220 km per second.</h3>
+        <p>It is around 24,000-26,000 light-years from the galactic centre and it takes the Sun approximately 225-250 million years to complete one orbit of the centre of the Milky Way.</p>
+        <hr>
+        <h3>5). The Sun will eventually be about the size of Earth.</h3>
+        <p>Once the Sun has completed its red giant phase, it will collapse. It’s huge mass will be retained, but it will have a volume similar to that of Earth. When that happens, it will be known as a white dwarf.</p>
+        <hr>
+        <h3>6). It takes eight minutes for light reach Earth from the Sun.</h3>
+        <p> The average distance from the Sun to the Earth is about 150 million km. Light travels at 300,000 km per second so dividing one by the other gives you 500 seconds – eight minutes and twenty seconds. This energy can reach Earth in mere minutes,
+            but it takes millions of years to travel from the Sun’s core to its surface.</p>
+        <hr>
+        <h3>7). The Sun is halfway through its life.</h3>
+        <p>At 4.5 billion years old, the Sun has burned off around half of its hydrogen stores and has enough left to continue burning hydrogen for another 5 billion years. Currently the Sun is a yellow dwarf star.</p>
+        <hr>
+        <h3>8). The distance between Earth and Sun changes.</h3>
+        <p>This is because the Earth travels on a elliptical orbit path around the Sun. The distance between the two ranges from 147 to 152 million km. This distance between them is one Astronomical Unit (AU).</p>
+        <hr>
+        <h3>9). The Sun rotates in the opposite direction to Earth.</h3>
+        <p>The Sun rotates more quickly at its equator than it does close to its poles. This is known as differential rotation.</p>
+        <hr>
+        <h3>10). Temperatures inside the Sun can reach 15 million degrees Celsius.</h3>
+        <p>Energy is generated through nuclear fusion in the Sun’s core – this is when hydrogen converts to helium – and because objects generally expand, the Sun would explode like an enormous bomb if it wasn’t for it’s tremendous gravitational pull.</p>
+        <hr>
+        <h3>11). The atmosphere of the Sun is composed of three layers:</h3>
+        <p>the photosphere, the chromosphere, and the corona.</p>
+        <hr>
+        <h3>12). The Sun is classified as a yellow dwarf star.</h3>
+        <p>It is a main sequence star with surface temperatures between 5,000 and 5,700 degrees celsius (9,000 and 10,300 degrees fahrenheit).</p>
+        <hr>
+        <h3></h3>
+        <p></p>
+    </div>
+    <div class="two2"></div>
+</div>
+{% endblock %}

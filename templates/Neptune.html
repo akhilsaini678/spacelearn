@@ -1,0 +1,147 @@
+<!-- This is Base File -->
+{% extends 'planets.html' %}
+{% load static %}
+
+<!-- This is Title -->
+{% block title %} Neptune {% endblock %} {% block title1 %} Neptune {% endblock %}
+
+
+<!-- This is image -->
+{% block main_image %}
+<img class="main_img" src="{% static 'Images/Neptune_img.png' %}" alt="Neptune Image" width="300px" height="300px" style="border-radius: 10px;"> {% endblock %}
+<!-- This is theroy part. -->
+
+{% block main_summary %} Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth,
+slightly more massive than its near-twin Uranus. {% endblock %}
+
+
+
+{% block million %} billion {% endblock %}
+
+    <!-- This is Table -->
+    <!-- Age -->
+    {% block age %} {{ data.2 }} {% endblock %}
+    <!-- Speed -->
+    {% block speed %} {{ data.3 }} {% endblock %}
+    <!-- Mass -->
+    {% block mass %} {{ data.4|safe }} {% endblock %}
+    <!-- Radius -->
+    {% block radius %} {{ data.5 }} {% endblock %} {% block radius1 %} 2439.7 {% endblock %}
+    <!-- Surface Temperature -->
+    {% block surface_temperature %} {{ data.6 }} {% endblock %}
+    <!-- Density -->
+    {% block density %} {{ data.7|safe }} {% endblock %}
+    <!-- Distance from Sun -->
+    {% block distance_from_sun %} {{ data.8 }} {% endblock %} {% block distance_from_sun1 %} 58 {% endblock %}
+    <!-- Gravity -->
+    {% block gravity %} {{ data.9|safe }} {% endblock %}
+    <!-- Number of Satellites -->
+    {% block number_of_satellites %} {{ data.10 }} {% endblock %}
+    <!-- Length of day -->
+    {% block length_of_day %} {{ data.11 }} {% endblock %}
+    <!-- Revolution -->
+    {% block revolution %} {{ data.12 }} {% endblock %}
+    <!-- Axis Tilt -->
+    {% block axis_tilt %} {{ data.13 }} {% endblock %}
+    
+{% block content %}
+<div class="mains2">
+    <div class="one2">
+        <h1 class="headleft">Formation</h1>
+        <p>
+            Neptune took shape when the rest of the solar system formed about 4.5 billion years ago, when gravity pulled swirling gas and dust in to become this ice giant. Like its neighbor Uranus, Neptune likely formed closer to the Sun and moved to the outer solar
+            system about 4 billion years ago.
+        </p>
+        <h1 class="headleft">Structure</h1>
+        <p>
+            Neptune is one of two ice giants in the outer solar system (the other is Uranus). Most (80 percent or more) of the planet's mass is made up of a hot dense fluid of "icy" materials—water, methane and ammonia—above a small, rocky core. Of the giant planets,
+            Neptune is the densest.
+        </p>
+        <p>Scientists think there might be an ocean of super hot water under Neptune's cold clouds. It does not boil away because incredibly high pressure keeps it locked inside.
+        </p>
+
+        <h1 class="headleft">Size and Distance</h1>
+        <p>
+            With a radius of 15,299.4 miles (24,622 kilometers), Neptune is about four times wider than Earth. If Earth were the size of a nickel, Neptune would be about as big as a baseball.
+        </p>
+        <p>From an average distance of 2.8 billion miles (4.5 billion kilometers), Neptune is 30 astronomical units away from the Sun. One astronomical unit (abbreviated as AU), is the distance from the Sun to Earth. From this distance, it takes sunlight
+            4 hours to travel from the Sun to Neptune.
+        </p>
+        <h1 class="headleft">Orbit and Rotation</h1>
+        <p>
+            One day on Neptune takes about 16 hours (the time it takes for Neptune to rotate or spin once). And Neptune makes a complete orbit around the Sun (a year in Neptunian time) in about 165 Earth years (60,190 Earth days).
+        </p>
+        <p>Sometimes Neptune is even farther from the Sun than dwarf planet Pluto. Pluto's highly eccentric, oval-shaped orbit brings it inside Neptune's orbit for a 20-year period every 248 Earth years. This switch, in which Pluto is closer to the Sun than
+            Neptune, happened most recently from 1979 to 1999. Pluto can never crash into Neptune, though, because for every three laps Neptune takes around the Sun, Pluto makes two. This repeating pattern prevents close approaches of the two bodies.
+        </p>
+        <p>Neptune’s axis of rotation is tilted 28 degrees with respect to the plane of its orbit around the Sun, which is similar to the axial tilts of Mars and Earth. This means that Neptune experiences seasons just like we do on Earth; however, since
+            its year is so long, each of the four seasons lasts for over 40 years.
+        </p>
+        <h1 class="headleft">Atmosphere</h1>
+        <p>
+            Neptune's atmosphere is made up mostly of hydrogen and helium with just a little bit of methane. Neptune's neighbor Uranus is a blue-green color due to such atmospheric methane, but Neptune is a more vivid, brighter blue, so there must be an unknown component
+            that causes the more intense color.
+        </p>
+        <p>Neptune is our solar system's windiest world. Despite its great distance and low energy input from the Sun, Neptune's winds can be three times stronger than Jupiter's and nine times stronger than Earth's. These winds whip clouds of frozen methane
+            across the planet at speeds of more than 1,200 miles per hour (2,000 kilometers per hour). Even Earth's most powerful winds hit only about 250 miles per hour (400 kilometers per hour).
+        </p>
+        <p>In 1989 a large, oval-shaped storm in Neptune's southern hemisphere dubbed the "Great Dark Spot" was large enough to contain the entire Earth. That storm has since disappeared, but new ones have appeared on different parts of the planet.
+
+
+        </p>
+
+        <h1 class="headleft">Composition of the Neptune</h1>
+
+        <p>
+            Neptune's atmosphere is made up predominately of hydrogen and helium, with some methane. The methane is part of what gives Neptune its brilliant blue tint, as it absorbs red light and reflects bluer colors.
+        </p>
+        <p>
+            <ul class="list9">
+                <li class="hydrogen">Hydrogen<br>80%</li>
+                <li class="helium">Helium<br>18.5%</li>
+                <li class="argon">Methane<br>1.5%</li>
+            </ul>
+        </p>
+
+        <h1 class="headleft">Facts about the Neptune</h1>
+        <h3>1). Neptune was discovered by Jean Joseph Le Verrier.</h3>
+        <p> The planet was not known to ancient civilizations because it is not visible to the naked eye. The planet was initially called Le Verrier after its discoverer. This name, however, quickly was abandoned and the name Neptune was chosen instead.</p>
+        <hr>
+        <h3>2). The climate on Neptune is extremely active.</h3>
+        <p>In its upper atmosphere, large storms sweep across it and high-speed solar winds track around the planet at up to 1,340 km per second. The largest storm was the Great Dark Spot in 1989 which lasted for around five years.</p>
+        <hr>
+        <h3>3). Like the other outer planets, Neptune possesses a ring system.</h3>
+        <p>Though its rings are very faint. They are most likely made up of ice particles and grains of dust with a carbon-based substance coating them.</p>
+        <hr>
+        <h3>4). Only one spacecraft, the Voyager 2, has flown past Neptune.</h3>
+        <p>It happened in 1989 and captured the first close-up images of the Neptunian system. It took 246 minutes – four hours and six minutes – for signals from Voyager 2 to reach back to Earth.</p>
+        <hr>
+        <h3>5). Neptune spins very quickly on its axis.</h3>
+        <p>The planets equatorial clouds take 18 hours to complete one rotation. The reason this happens is that Neptune does not have a solid body.</p>
+        <hr>
+        <h3>6). Neptune has a storm similar the Great Red Spot on Jupiter.</h3>
+        <p> It is commonly known as the Great Dark Spot and is roughly the size of Earth.</p>
+        <hr>
+        <h3>Some other facts :</h3>
+        <ul style="padding-left: 3vw;">
+            <li>
+                <p>Neptune has an average surface temperature of -214°C – approximately -353°F.</p>
+            </li>
+            <li>
+                <p>The largest Neptunian moon, Triton, was discovered just 17 days after Neptune itself was discovered.</p>
+            </li>
+            <li>
+                <p>Neptune is the Roman God of the Sea. In Greek, Neptune is called Poseidon.</p>
+            </li>
+            <li>
+                <p>It takes Neptune 164.8 Earth years to orbit the Sun. On 11 July 2011, Neptune completed its first full orbit since its discovery in 1846.</p>
+            </li>
+            <li>
+                <p>Neptune has the second largest gravity of any planet in the solar system – second only to Jupiter.</p>
+            </li>
+        </ul>
+        <hr>
+    </div>
+    <div class="two2"></div>
+</div>
+{% endblock %}

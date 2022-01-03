@@ -1,0 +1,18 @@
+<!-- This is Base File -->
+{% extends 'navbar.html' %}
+{% load static %}
+
+<!-- This is login page -->
+{% block content %}
+<div class="form_div">
+    <p>Login</p>
+    <p style="font-size:18;">{{ msg }}</p>
+    <form action="{% url 'login' %}" method="POST" class="contact">
+        <label for="username">Username</label>
+        <input type="text" maxlength="12" id="user" name="username">
+        <label for="password">Password</label>
+        <input type="password" id="pass" name="password">
+        <input type="submit" value="Login">
+    </form>
+</div>
+{% endblock %}

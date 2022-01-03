@@ -1,0 +1,116 @@
+/* Bottom Navigation Bar */
+
+.navbar_bottom {
+    margin-top: 180px;
+    position: sticky;
+    top: 100%;
+    color: white;
+    width: 100%;
+    padding: 18px;
+    padding-top: 36px;
+    height: fit-content;
+    background-color: rgb(24, 24, 24);
+}
+
+
+/* -------------------- Reference ----------------------*/
+
+.refer {
+    width: 100%;
+    margin-bottom: 36px;
+    padding-left: 15%;
+    padding-right: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.refer div {
+    height: 60vh;
+    width: 30%;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 27px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    background-color: rgba(61, 61, 59, 0.7);
+}
+
+.refer img {
+    width: 100%;
+    transition: transform 1s;
+    height: 80%;
+    padding-top: 20%;
+}
+
+.refer div:hover {
+    background-color: rgba(61, 61, 59, 1);
+}
+
+.refer div:hover p,
+.refer div:hover img {
+    transform: scale(1.5);
+}
+
+@media screen and (max-width:768px) {
+    .refer div p {
+        font-size: 12px;
+    }
+    .refer {
+        width: 100%;
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+    .refer div {
+        height: 18vh;
+        width: 31%;
+        margin-bottom: 10px;
+    }
+}
+
+.refer_info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+    justify-content: space-around;
+    width: 100%;
+    text-align: justify;
+}
+
+.refer_info div {
+    flex: 30%;
+    padding: 2%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+}
+
+@media screen and (max-width:768px) {
+    .refer_info div {
+        flex: 100%;
+        font-size: 14px;
+    }
+}
+
+.fa {
+    padding: 1vw;
+    font-size: 2vw;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    background-color: rgb(50, 168, 164);
+    color: white;
+    text-decoration: none;
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-google,
+.fa-linkedin,
+.fa-instagram {
+    background: #242627;
+    color: white;
+}

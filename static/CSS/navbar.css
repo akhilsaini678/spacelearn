@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.solarsystem_menu {
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.solarsystem_menu:hover {
+    transform: scale(1.07);
+}
+
+.dropdown-menu {
+    background-color: rgb(24, 24, 24);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.dropdown-menu li a:hover {
+    background-color: rgb(50, 168, 164);
+}
+
+.dropdown-menu li a {
+    color: white;
+}
+
+.main_menu {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    margin-bottom: 0px;
+    border-radius: 0px;
+}

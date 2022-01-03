@@ -1,0 +1,56 @@
+<!-- This is base file -->
+{% extends 'navbar.html' %}
+{% load static %}
+
+<!-- This is content -->
+{% block content %}
+<div class="slideshow">
+    <div class="slideshow_text">
+        We are just like a drop in the sea.
+    </div>
+    <div class="slides"><img src="{% static 'Images/slideshow1.jpg' %}" alt="Image 1">
+    </div>
+    <div class="slides"><img src="{% static 'Images/slideshow2.jpg' %}" alt="Image 2">
+    </div>
+    <div class="slides"><img src="{% static 'Images/slideshow3.jpg' %}" alt="Image 3">
+    </div>
+</div>
+
+
+
+<!-- This is main content. -->
+<div class="mains">
+    <div class="one">
+        <h3>Have you ever wondered, how this universe was formed , how the sun and the earth was formed , how we were formed?
+        </h3>
+        <br>
+        <p>Our Universe began with an explosion of itself (which is known as <strong>'Big Bang'</strong>). It has been 13.8 billion years since then, and we have explored only a tiny part of our solar system. A question often comes in our mind , "Are we
+            alone in this huge universe?". This question has made us to send satellites and hovers to the mars. Since the first satellite launch, we have been continuosly exploring our solar system. Voyegar - 1 and Voyegar 2 ( First man-made spacecraft
+            to cross the solar system ) are the proof of these efforts. There are billions of galaxies in this universe and there are billions of stars in each galaxy, which makes the probability of having life on other planets really high.
+        </p>
+        <p>
+            Our earth was formed 4.5 billion year ago , when a big asteroid collided with the sun. This collision give what we have today. The earth keep on burning for first billion year since it was really hot and after that it's temperature start declining. The
+            first form of life which we have happend inside the sea.
+        </p>
+    </div>
+    <div class="two">Also read about this</div>
+</div>
+
+
+<div class="data_big reveal">
+    <p class="aaa">1 Universe<br></p>
+    <p class="aaa">10000000 Clusters<br></p>
+    <p class="aaa">2000000000000 Galaxies</p>
+    <p class="aaa">200000000000000000000000 Stars<br></p>
+    <!--<div class="we-row" style="text-align: center; padding-top: 10px;">
+            <div class="w3-col w3-mobile aaa" style="width: 33%; padding: 6px; @media screen and (max-width: 600px;) { padding-top: 3%; padding-bottom: 3%;font-size: 7px;width: 100%;
+                }">10000000<br>Clusters</div>
+            <div class="w3-col w3-mobile aaa" style="width: 33%; padding: 6px; @media screen and (max-width: 600px;) { padding-top: 3%;padding-bottom: 3%;font-size: 7px;width: 100%;
+                }">2000000000000<br>Galaxies</div>
+            <div class="w3-col w3-mobile aaa" style="width: 33%; padding: 6px; @media screen and (max-width: 600px;) { padding-top: 3%;padding-bottom: 3%;font-size: 7px;width: 100%;            
+            }">200000000000000000000000<br>Stars
+            </div>
+        </div>-->
+    <p class="aaa">10000000000000000000000000 Planets<br></p>
+</div>
+{% endblock %}

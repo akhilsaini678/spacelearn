@@ -1,0 +1,71 @@
+<!-- This is base file -->
+{% extends 'navbar.html'%}
+{% load static %}
+
+<!-- This is content -->
+{% block content %}
+
+<!-- This is theroy part. -->
+<div class="mains2">
+    <div class="one2">
+        <h1 style="font-size: 64px;text-align: center;" class="headmain">Andromeda</h1><br>
+        <img class="main_img" src="{% static 'Images/Andromeda_img.png' %}" alt="Andromeda Image" width="300px" height="300px" style="border-radius: 10px;">
+        <p class="heads">The Andromeda Galaxy, also known as Messier 31 or M31, is a spiral galaxy located about 2.5 million light-years (2.4×1019 km) from Earth. Located in the Andromeda constellation, it is the closest spiral galaxy to the Milky Way, where our solar
+            system is, although it isn't the closest overall galaxy to the Milky Way.
+        </p>
+        <p>It is also the largest galaxy of what is called the Local Group - a collection of more than 54 galaxies including the Milky Way, the Triangulum galaxy and many smaller dwarf galaxies.</p>
+    </div>
+    <div class="two2"></div>
+</div>
+
+
+<div class="solar_system">
+    <table class="reveal">
+        <caption>Information</caption>
+        <tr>
+            <th class="reveal w3-mobile">Age<br> 10.01 billion years
+            </th>
+            <th class="reveal w3-mobile">Speed<br> 110 km per second
+            </th>
+            <th class="reveal w3-mobile">Mass<br> 2.5 × 10<sup>42</sup> kg
+            </th>
+        </tr>
+        <tr>
+            <th class="reveal w3-mobile">Radius<br>
+                <p id="radius_sun">110000 lightyear</p>
+            </th>
+            <th class="reveal w3-mobile">Number of stars<br>
+                <p id="surface">1 trillion</p>
+            </th>
+        </tr>
+    </table>
+</div>
+
+
+<div class="mains2">
+    <div class="one2">
+        <h1 class="headleft">Facts about the Andromeda</h1>
+        <h3>1). The Andromeda Galaxy gets its name from the area in which it appears, the constellation of Andromeda.</h3>
+        <p> Which is named for the after the mythological Greek princess Andromeda.</p>
+        <hr>
+        <h3>2). Andromeda is probably the most massive galaxy in the Local Group.</h3>
+        <p> This is contrary to previous research which speculated that the Milky Way was the most massive because it contained more dark matter.</p>
+        <hr>
+        <h3>3). A 2006 study put the Milky Way at around 80% the mass of the Andromeda Galaxy.</h3>
+        <hr>
+        <h3>4). There are around 1 trillion stars in the galaxy, compared with the Milky Way which has around 200-400 billion.</h3>
+        <hr>
+        <h3>5). In approximately 3.75 billion years, the Andromeda and Milky Way galaxies will collide, merging to form a giant elliptical galaxy.</h3>
+        <hr>
+        <h3>6). A team of astronomers in 2010 believe that M31 was formed between 5 and 9 billion years ago when two smaller galaxies collided and merged.</h3>
+
+        <hr>
+        <h3>7). The Andromeda Galaxy has an apparent magnitude of 3.4, which makes it bright enough to be seen by the naked eye on moonless nights.</h3>
+        <hr>
+        <h3>8). The Andromeda Galaxy is approaching the Milky Way at rate of around 110 kilometres per second (68 mi/s).</h3>
+        <hr>
+
+    </div>
+    <div class="two2"></div>
+</div>
+{% endblock %}

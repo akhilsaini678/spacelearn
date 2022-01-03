@@ -1,0 +1,20 @@
+{% extends 'navbar.html' %}
+{% load static %}
+
+
+{% block content %}
+<div class="form_div">
+    <p>Contact Me</p>
+    <p style="font-size:18;">{{ msg1 }}</p>
+    <!-- This is theroy part. -->
+    <form action="{% url 'contact'% }" method="POST" class="contact">
+        <label for="name">Your Name</label><br>
+        <input type="text" id="name" name="Name"><br>
+        <label for="email">Your Email</label><br>
+        <input type="email" id="email" name="Email"><br>
+        <label for="">Your Message</label><br>
+        <textarea id="message" cols="30" rows="6" name="Message"></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+{% endblock %}

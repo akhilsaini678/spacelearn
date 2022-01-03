@@ -1,0 +1,20 @@
+<!-- This is Base File -->
+{% extends 'navbar.html' %}
+{% load static %}
+
+<!-- This is Register page -->
+{% block content %}
+<div class="form_div">
+    <p>Register</p>
+    <p style="font-size:18;">{{ msg1 }}</p>
+    <form action="{% url 'register' %}" method="POST" class="contact">
+        <label for="username" maxlength="12">Username</label>
+        <input type="text" id="user" name="username">
+        <label for="password">Password</label>
+        <input type="password" id="pass" name="password">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email">
+        <input type="submit" value="Register">
+    </form>
+</div>
+{% endblock %}

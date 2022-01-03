@@ -1,0 +1,556 @@
+/* ---------------- Site Color ----------------- 
+rgb(50, 200, 110);
+   rgb(50, 168, 164); - Blue
+   rgb(111, 172, 111);
+   rgb(245, 78, 95);
+   linear-gradient( to right, #D76D77, #FFAF7B);
+   #3CA55C - Green
+   #ffa751
+*/
+
+
+/*-------------------- Table CSS ----------------------*/
+
+.solar_system {
+    width: 96vw;
+    background-color: #3CA55C;
+    margin: auto;
+    box-shadow: 0 0 12px rgb(36, 36, 36);
+    display: block;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 12vh;
+    margin-top: 72px;
+}
+
+.solar_system table p {
+    display: inline;
+}
+
+.solar_system table {
+    background-color: rgb(24, 24, 24);
+    width: 100%;
+    opacity: 90%;
+    border-radius: 10px;
+    border-collapse: collapse;
+}
+
+.solar_system table caption {
+    text-align: center;
+    color: white;
+    font-size: 36px;
+}
+
+.solar_system table tr th {
+    text-align: center;
+    padding: 10px;
+    transition: 0.5s;
+    font-size: 2vw;
+    font-weight: 200;
+}
+
+.solar_system select {
+    height: 36px;
+    color: white;
+    background-color: rgb(24, 24, 24);
+    opacity: 90%;
+    font-size: 2rem;
+    border: none;
+    font-style: bold;
+}
+
+@media screen and (max-width:600px) {
+    .solar_system table tr th {
+        text-align: center;
+        padding: 10px;
+        transition: 0.5s;
+        font-size: 16px;
+    }
+    .heads {
+        font-size: 18px;
+    }
+    .solar_system select {
+        font-size: 16px;
+    }
+}
+
+
+/*-------------------- Table CSS End -----------------------------*/
+
+
+/*-------------------- Mains Content CSS -------------------------*/
+
+.mains2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 96vw;
+    margin: auto;
+    margin-top: 36px;
+    text-align: justify;
+}
+
+.mains2 p {
+    font-size: 18px;
+    margin-bottom: 24px;
+    text-align: justify;
+}
+
+.one2 {
+    flex: 0.85;
+    box-shadow: 0 0 10px rgb(36, 36, 36);
+    padding: 2vw;
+    border-radius: 10px;
+}
+
+.two2 {
+    flex: 0.15;
+    border-left: rgb(36, 36, 36) solid 3px;
+    margin-left: 20px;
+    padding: 2vw;
+}
+
+.main_img {
+    float: right;
+    margin-left: 2vw;
+}
+
+.headmain {
+    display: block;
+    padding: 2px;
+    text-align: center;
+    border-radius: 10px;
+    padding-left: 6px;
+}
+
+.one2 hr {
+    border: solid 2px #3CA55C
+}
+
+.one2 h3 {
+    font-weight: bold;
+}
+
+.headleft {
+    text-align: left;
+    display: inline-block;
+    font-size: 36px;
+    border-left: solid 4px #3CA55C;
+    border-bottom: solid 4px #3CA55C;
+    box-shadow: 0 0 10px rgb(36, 36, 36);
+    padding: 1vh;
+    margin-bottom: 3vh;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+@media screen and (max-width:768px) {
+    .mains2 p {
+        font-size: 16px;
+    }
+    .one2 {
+        flex: 1;
+    }
+    .two2 {
+        display: none;
+    }
+    .main_img {
+        display: block;
+        float: none;
+        margin: auto;
+    }
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(90px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
+/*--------------------- Sun Part ----------------------*/
+
+.list1 {
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.list1 .hydrogen {
+    flex: 0.72;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(111, 172, 111);
+}
+
+.list1 .helium {
+    flex: 0.28;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(222, 172, 111);
+}
+
+.list1 li {
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 32px;
+    position: relative;
+}
+
+
+/*----------------------- Mercury Part -------------------------*/
+
+.mercury_composition img {
+    width: 350px;
+    height: 300px;
+    float: right;
+    margin-bottom: 20px;
+    margin-left: 2vw;
+}
+
+@media screen and (max-width:768px) {
+    .mercury_composition img {
+        width: 280px;
+        height: 240px;
+        display: block;
+        float: none;
+        margin: auto;
+    }
+}
+
+.list2 {
+    width: 100%;
+    display: flex;
+}
+
+.list2 .hydrogen {
+    flex: 0.72;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(111, 172, 111);
+}
+
+.list2 .helium {
+    flex: 0.28;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(222, 172, 111);
+}
+
+.list2 li {
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 32px;
+    position: relative;
+}
+
+
+/*--------------------- Venus Part ----------------------*/
+
+.list3 {
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.list3 .hydrogen {
+    flex: 0.95;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(111, 172, 111);
+}
+
+.list3 .helium {
+    flex: 0.05;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(222, 172, 111);
+}
+
+.list3 li {
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 32px;
+    position: relative;
+}
+
+
+/*----------------------- Earth Part -------------------------*/
+
+.earth_composition::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.earth_composition img {
+    width: 480px;
+    height: 300px;
+    float: right;
+    margin-bottom: 20px;
+    margin-left: 2vw;
+}
+
+@media screen and (max-width:768px) {
+    .earth_composition img {
+        width: 350px;
+        height: 210px;
+        display: block;
+        float: none;
+        margin: auto;
+    }
+}
+
+.list4 {
+    width: 100%;
+    display: flex;
+}
+
+.list4 .hydrogen {
+    flex: 0.78;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(111, 172, 111);
+}
+
+.list4 .helium {
+    flex: 0.21;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(222, 172, 111);
+}
+
+.list4 li {
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 32px;
+    position: relative;
+}
+
+
+/*----------------------- Mars Part -------------------------*/
+
+.mars_composition::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.mars_composition img {
+    width: 480px;
+    height: 300px;
+    float: right;
+    margin-bottom: 20px;
+    margin-left: 2vw;
+}
+
+@media screen and (max-width:768px) {
+    .mars_composition img {
+        width: 350px;
+        height: 210px;
+        display: block;
+        float: none;
+        margin: auto;
+    }
+}
+
+.list5 {
+    width: 100%;
+    display: flex;
+}
+
+.list5 .hydrogen {
+    flex: 0.85;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(111, 172, 111);
+}
+
+.list5 .helium {
+    flex: 0.10;
+    background-color: rgb(222, 172, 111);
+}
+
+.list5 .argon {
+    flex: 0.05;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(127, 163, 211);
+}
+
+.list5 li {
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 32px;
+    position: relative;
+}
+
+
+/*----------------------- Jupiter Part -------------------------*/
+
+.list6 {
+    width: 100%;
+    display: flex;
+}
+
+.list6 .hydrogen {
+    flex: 0.90;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(111, 172, 111);
+}
+
+.list6 .helium {
+    flex: 0.10;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(222, 172, 111);
+}
+
+.list6 li {
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 32px;
+    position: relative;
+}
+
+
+/*----------------------- Saturn Part -------------------------*/
+
+.list7 {
+    width: 100%;
+    display: flex;
+}
+
+.list7 .hydrogen {
+    flex: 0.75;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(111, 172, 111);
+}
+
+.list7 .helium {
+    flex: 0.25;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(222, 172, 111);
+}
+
+.list7 li {
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 32px;
+    position: relative;
+}
+
+
+/*----------------------- Uranus Part -------------------------*/
+
+.list8 {
+    width: 100%;
+    display: flex;
+}
+
+.list8 .hydrogen {
+    flex: 0.72;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(111, 172, 111);
+}
+
+.list8 .helium {
+    flex: 0.26;
+    background-color: rgb(222, 172, 111);
+}
+
+.list8 .argon {
+    flex: 0.02;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(127, 163, 211);
+}
+
+.list8 li {
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 32px;
+    position: relative;
+}
+
+
+/*----------------------- Neptune Part -------------------------*/
+
+.list9 {
+    width: 100%;
+    display: flex;
+}
+
+.list9 .hydrogen {
+    flex: 0.7;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(111, 172, 111);
+}
+
+.list9 .helium {
+    flex: 0.2;
+    background-color: rgb(222, 172, 111);
+}
+
+.list9 .argon {
+    flex: 0.1;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(127, 163, 211);
+}
+
+.list9 li {
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 32px;
+    position: relative;
+}
+
+
+/*----------------------- Pluto Part -------------------------*/
+
+.list10 {
+    width: 100%;
+    display: flex;
+}
+
+.list10 .hydrogen {
+    flex: 0.9;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(111, 172, 111);
+}
+
+.list10 .helium {
+    flex: 0.1;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(222, 172, 111);
+}
+
+.list10 li {
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 32px;
+    position: relative;
+}

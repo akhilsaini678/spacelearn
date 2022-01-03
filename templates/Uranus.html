@@ -1,0 +1,160 @@
+<!-- This is Base File -->
+{% extends 'planets.html' %}
+{% load static %}
+
+<!-- This is Title -->
+{% block title %} Uranus {% endblock %} {% block title1 %} Uranus {% endblock %}
+
+
+<!-- This is image -->
+{% block main_image %}
+<img class="main_img" src="{% static 'Images/Uranus_img.png' %}" alt="Uranus Image" width="300px" height="300px" style="border-radius: 10px;"> {% endblock %}
+<!-- This is theroy part. -->
+
+{% block main_summary %} Uranus is the seventh planet from the Sun. Its name is a reference to the Greek god of the sky, Uranus, who, according to Greek mythology, was the great-grandfather of Ares, grandfather of Zeus and father of Cronus. Uranus, named
+after the the father of the Roman god Saturn. It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System. {% endblock %}
+
+{% block million %} billion {% endblock %}
+
+    <!-- This is Table -->
+    <!-- Age -->
+    {% block age %} {{ data.2 }} {% endblock %}
+    <!-- Speed -->
+    {% block speed %} {{ data.3 }} {% endblock %}
+    <!-- Mass -->
+    {% block mass %} {{ data.4|safe }} {% endblock %}
+    <!-- Radius -->
+    {% block radius %} {{ data.5 }} {% endblock %} {% block radius1 %} 2439.7 {% endblock %}
+    <!-- Surface Temperature -->
+    {% block surface_temperature %} {{ data.6 }} {% endblock %}
+    <!-- Density -->
+    {% block density %} {{ data.7|safe }} {% endblock %}
+    <!-- Distance from Sun -->
+    {% block distance_from_sun %} {{ data.8 }} {% endblock %} {% block distance_from_sun1 %} 58 {% endblock %}
+    <!-- Gravity -->
+    {% block gravity %} {{ data.9|safe }} {% endblock %}
+    <!-- Number of Satellites -->
+    {% block number_of_satellites %} {{ data.10 }} {% endblock %}
+    <!-- Length of day -->
+    {% block length_of_day %} {{ data.11 }} {% endblock %}
+    <!-- Revolution -->
+    {% block revolution %} {{ data.12 }} {% endblock %}
+    <!-- Axis Tilt -->
+    {% block axis_tilt %} {{ data.13 }} {% endblock %}
+    
+    {% block content %}
+<div class="mains2">
+    <div class="one2">
+        <h1 class="headleft">Formation</h1>
+        <p>
+            Uranus took shape when the rest of the solar system formed about 4.5 billion years ago, when gravity pulled swirling gas and dust in to become this ice giant. Like its neighbor Neptune, Uranus likely formed closer to the Sun and moved to the outer solar
+            system about 4 billion years ago, where it is the seventh planet from the Sun.
+        </p>
+        <h1 class="headleft">Structure</h1>
+        <p>
+            Uranus is one of two ice giants in the outer solar system (the other is Neptune). Most (80 percent or more) of the planet's mass is made up of a hot dense fluid of "icy" materials—water, methane and ammonia—above a small rocky core. Near the core, it
+            heats up to 9,000 degrees Fahrenheit (4,982 degrees Celsius).
+        </p>
+        <p>Uranus is slightly larger in diameter than its neighbor Neptune, yet smaller in mass. It is the second least dense planet; Saturn is the least dense of all.
+        </p>
+        <p>Uranus gets its blue-green color from methane gas in the atmosphere. Sunlight passes through the atmosphere and is reflected back out by Uranus' cloud tops. Methane gas absorbs the red portion of the light, resulting in a blue-green color.
+        </p>
+
+        <h1 class="headleft">Size and Distance</h1>
+        <p>
+            With a radius of 15,759.2 miles (25,362 kilometers), Uranus is 4 times wider than Earth. If Earth was the size of a nickel, Uranus would be about as big as a softball.
+        </p>
+        <p>From an average distance of 1.8 billion miles (2.9 billion kilometers), Uranus is 19.8 astronomical units away from the Sun. One astronomical unit (abbreviated as AU), is the distance from the Sun to Earth. From this distance, it takes sunlight
+            2 hours and 40 minutes to travel from the Sun to Uranus.
+        </p>
+
+        <h1 class="headleft">Orbit and Rotation</h1>
+        <p>
+            One day on Uranus takes about 17 hours (the time it takes for Uranus to rotate or spin once). And Uranus makes a complete orbit around the Sun (a year in Uranian time) in about 84 Earth years (30,687 Earth days).
+        </p>
+        <p>Uranus is the only planet whose equator is nearly at a right angle to its orbit, with a tilt of 97.77 degrees—possibly the result of a collision with an Earth-sized object long ago. This unique tilt causes the most extreme seasons in the solar
+            system. For nearly a quarter of each Uranian year, the Sun shines directly over each pole, plunging the other half of the planet into a 21-year-long, dark winter.
+        </p>
+        <p>Uranus is also one of just two planets that rotate in the opposite direction than most of the planets (Venus is the other one), from east to west.
+        </p>
+
+        <h1 class="headleft">Atmosphere</h1>
+        <p>
+            Uranus' atmosphere is mostly hydrogen and helium, with a small amount of methane and traces of water and ammonia. The methane gives Uranus its signature blue color.
+        </p>
+        <p>While Voyager 2 saw only a few discrete clouds, a Great Dark Spot and a small dark spot during its flyby in 1986, more recent observations reveal that Uranus exhibits dynamic clouds as it approaches equinox, including rapidly changing bright features.
+        </p>
+        <p>Uranus' planetary atmosphere, with a minimum temperature of 49K (-224.2 degrees Celsius) makes it even colder than Neptune in some places.
+        </p>
+        <p>Wind speeds can reach up to 560 miles per hour (900 kilometers per hour) on Uranus. Winds are retrograde at the equator, blowing in the reverse direction of the planet’s rotation. But closer to the poles, winds shift to a prograde direction, flowing
+            with Uranus' rotation.
+        </p>
+
+        <h1 class="headleft">Composition of the Uranus</h1>
+        <p>
+            Uranus is made of water, methane, and ammonia fluids above a small rocky center. Its atmosphere is made of hydrogen and helium like Jupiter and Saturn, but it also has methane. The methane makes Uranus blue.
+        </p>
+        <p>
+            <ul class="list8">
+                <li class="hydrogen">Hydrogen<br>82.5%</li>
+                <li class="helium">Helium<br>15.2%</li>
+                <li class="argon">Methane<br>2.3%</li>
+            </ul>
+        </p>
+
+        <h1 class="headleft">Facts about the Uranus.</h1>
+        <h3>1). William Herschel discovered Uranus in 1781. </h3>
+        <p> The planet is too dim to have been seen by ancient civilizations. Herschel himself believed that Uranus was a comet at first, but several years later it was confirmed as a planet – making Uranus the first planet discovered in modern history. The
+            original name proposed by Herschel was “Georgian Sidus” after King George III but the scientific community didn’t take to it. Instead, Uranus was proposed and accepted by astronomer Johann Bode and it comes from ancient Greek god Ouranos.</p>
+        <hr>
+        <h3>2). Uranus rotates on its axis once every 17 hours and 14 minutes.</h3>
+        <p>Like Venus, it turns in a retrograde direction which is opposite to the direction Earth and the other six planets turn.</p>
+        <hr>
+        <h3>3). It takes Uranus 84 Earth days to orbit the Sun.</h3>
+        <p>Its axis is at 98 degrees, which means it almost lies sideways as it orbits the Sun. This means that the north and south poles of Uranus lie near where the equator is on Earth. During parts of its orbit one or other of the poles directly face
+            the Sun which means the planet gets around 42 years of direct sunlight followed by 42 years of darkness.</p>
+        <hr>
+        <h3>4). A collision may have caused the unusual tilt of Uranus.</h3>
+        <p>The theory is that an Earth-sized planet may have collided with Uranus which forced its axis to drastically shift.</p>
+        <hr>
+        <h3>5). Uranus is often referred to as the “ice giant”.</h3>
+        <p>While it has a hydrogen and helium upper layer like the other gas giants, Uranus also has an icy mantle which surrounds its rock and iron core. The upper atmosphere of water, ammonia and methane ice crystals gives Uranus its distinctive pale blue
+            color.
+        </p>
+        <hr>
+        <h3>6). The Voyager 2 is the only spacecraft to have flown by Uranus.</h3>
+        <p> This happened in 1986 and it flew past the planet at a distance of around 81,500 km. This mission returned the very first close-up images of the planet, its ring system and its orbiting moons.</p>
+        <hr>
+        <h3>7). Uranus has 13 presently known rings.</h3>
+        <p>All except two Uranian are extremely narrow – they are usually a few kilometres wide. It is believed that the rings are probably quite young. The matter within the rings is thought to be parts of a moon or moons that were shattered by high speed
+            impacts with an object such as a comet or asteroid
+        </p>
+        <hr>
+        <h3>8). Uranus is the coldest planet in the solar system.</h3>
+        <p>The minimum surface temperature on Uranus is -224°C – making it the coldest of the eight planets. Its upper atmosphere is covered with a haze made mostly of methane which hides the storms taking place in its cloud decks.</p>
+        <hr>
+        <h3>9). The Uranian moons are named for characters created by Alexander Pope and William Shakespeare.</h3>
+        <p>For example, Oberan, Titania and Miranda. All these worlds are frozen with dark surfaces and some are a mixture of ice and rock. Of the Uranian moons, the most interesting is Miranda which has ice canyons, terraces and many strange looking surface
+            area.
+        </p>
+        <hr>
+        <h3>Some other facts :</h3>
+        <ul style="padding-left: 3vw;">
+            <li>
+                <p>The chemical element Uranium, discovered in 1789, was named after the newly discovered planet Uranus.</p>
+            </li>
+            <li>
+                <p>Uranus is the second least dense planet in the solar system, after Saturn.</p>
+            </li>
+            <li>
+                <p>The mass of Uranus is about 14.5 times the mass of Earth, making it the lightest of the four gas giants of the outer solar system.</p>
+            </li>
+            <li>
+                <p>Uranus wind speeds can reach up to 900 km per hour. This is roughly 560 miles per hour.</p>
+            </li>
+        </ul>
+        <hr>
+    </div>
+    <div class="two2"></div>
+</div>
+{% endblock %}

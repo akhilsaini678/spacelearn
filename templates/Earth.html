@@ -1,0 +1,147 @@
+<!-- This is Base File -->
+{% extends 'planets.html' %}
+{% load static %}
+
+<!-- This is Title -->
+{% block title %} Earth {% endblock %} {% block title1 %} Earth {% endblock %}
+
+
+<!-- This is image -->
+{% block main_image %}
+<img class="main_img" src="{% static 'Images/Earth_img.png' %}" alt="Earth Image" width="300px" height="300px" style="border-radius: 10px;"> {% endblock %}
+<!-- This is theroy part. -->
+
+{% block main_summary %} Earth is the third planet from the Sun and largest of the terrestrial planets. Surprisingly, while it is only the fifth largest planet in terms of size and mass, it is the densest (5,513 kg/m3) of all the planets. Earth is the
+only planet in the solar system not named after a mythological being. Instead, its name is derived from the Old English word "ertha" and the Anglo-Saxon word "erda" which means ground or soil. Earth was formed somewhere around 4.54 billion years ago and
+is currently the only known planet to support life - and lots of it. {% endblock %}
+
+
+{% block million %} million {% endblock %}
+
+    <!-- This is Table -->
+    <!-- Age -->
+    {% block age %} {{ data.2 }} {% endblock %}
+    <!-- Speed -->
+    {% block speed %} {{ data.3 }} {% endblock %}
+    <!-- Mass -->
+    {% block mass %} {{ data.4|safe }} {% endblock %}
+    <!-- Radius -->
+    {% block radius %} {{ data.5 }} {% endblock %} {% block radius1 %} 2439.7 {% endblock %}
+    <!-- Surface Temperature -->
+    {% block surface_temperature %} {{ data.6 }} {% endblock %}
+    <!-- Density -->
+    {% block density %} {{ data.7|safe }} {% endblock %}
+    <!-- Distance from Sun -->
+    {% block distance_from_sun %} {{ data.8 }} {% endblock %} {% block distance_from_sun1 %} 58 {% endblock %}
+    <!-- Gravity -->
+    {% block gravity %} {{ data.9|safe }} {% endblock %}
+    <!-- Number of Satellites -->
+    {% block number_of_satellites %} {{ data.10 }} {% endblock %}
+    <!-- Length of day -->
+    {% block length_of_day %} {{ data.11 }} {% endblock %}
+    <!-- Revolution -->
+    {% block revolution %} {{ data.12 }} {% endblock %}
+    <!-- Axis Tilt -->
+    {% block axis_tilt %} {{ data.13 }} {% endblock %}
+
+
+<!-- Content -->
+{% block content %}
+
+<div class="mains2">
+    <div class="one2">
+        <h1 class="headleft">Formation</h1>
+        <p>
+            When the solar system settled into its current layout about 4.5 billion years ago, Earth formed when gravity pulled swirling gas and dust in to become the third planet from the Sun. Like its fellow terrestrial planets, Earth has a central core, a rocky
+            mantle and a solid crust.
+        </p>
+        <h1 class="headleft">Structure</h1>
+        <p>
+            Earth is composed of four main layers, starting with an inner core at the planet's center, enveloped by the outer core, mantle and crust. The inner core is a solid sphere made of iron and nickel metals about 759 miles (1,221 kilometers) in radius. There
+            the temperature is as high as 9,800 degrees Fahrenheit (5,400 degrees Celsius). Surrounding the inner core is the outer core. This layer is about 1,400 miles (2,300 kilometers) thick, made of iron and nickel fluids. In between the outer core
+            and crust is the mantle, the thickest layer. This hot, viscous mixture of molten rock is about 1,800 miles (2,900 kilometers) thick and has the consistency of caramel. The outermost layer, Earth's crust, goes about 19 miles (30 kilometers)
+            deep on average on land.
+        </p>
+
+        <h1 class="headleft">Size and Distance</h1>
+        <p>
+            With a radius of 3,959 miles (6,371 kilometers), Earth is the biggest of the terrestrial planets, and the fifth largest planet overall. From an average distance of 93 million miles (150 million kilometers), Earth is exactly one astronomical unit away
+            from the Sun because one astronomical unit (abbreviated as AU), is the distance from the Sun to Earth. This unit provides an easy way to quickly compare planets' distances from the Sun. It takes about eight minutes for light from the Sun to
+            reach our planet.
+        </p>
+        <h1 class="headleft">Orbit and Rotation</h1>
+        <p>
+            As Earth orbits the Sun, it completes one rotation every 23.9 hours. It takes 365.25 days to complete one trip around the Sun. That extra quarter of a day presents a challenge to our calendar system, which counts one year as 365 days. To keep our yearly
+            calendars consistent with our orbit around the Sun, every four years we add one day. That day is called a leap day, and the year it's added to is called a leap year.
+        </p>
+        <h1 class="headleft">Atmosphere</h1>
+        <p>
+            Near the surface, Earth has an atmosphere that consists of 78 percent nitrogen, 21 percent oxygen, and 1 percent other gases such as argon, carbon dioxide and neon. The atmosphere affects Earth's long-term climate and short-term local weather and shields
+            us from much of the harmful radiation coming from the Sun. It also protects us from meteoroids, most of which burn up in the atmosphere, seen as meteors in the night sky, before they can strike the surface as meteorites.
+        </p>
+        <p>
+            <ul class="list4">
+                <li class="hydrogen">Nitrogen<br>78%</li>
+                <li class="helium">Oxygen<br>21%</li>
+            </ul>
+        </p>
+
+        <h1 class="headleft">Composition of the Earth</h1>
+        <div class="earth_composition">
+            <img src="Images/Earth_strucuture.png" alt="Earth Core Image" style="border-radius: 10px;">
+            <p>
+                Core, mantle, and crust are divisions based on composition. The crust makes up less than 1 percent of Earth by mass, consisting of oceanic crust and continental crust is often more felsic rock. The mantle is hot and represents about 68 percent of Earth’s
+                mass. Finally, the core is mostly iron metal. The core makes up about 31% of the Earth.
+            </p>
+        </div>
+
+        <h1 class="headleft">Facts about the Earth</h1>
+        <h3>1). The Earth was once believed to be the centre of the universe.</h3>
+        <p> For 2000 years ancient astronomers believed that the Earth was static and other celestial bodies travels around it in circular orbit. In 1543, Copernicus published his Sun-centered model of the Solar System which put the Sun at the centre of our
+            solar system.</p>
+        <hr>
+        <h3>2). Earth is the only planet not named for a mythological god or goddess.</h3>
+        <p>The word "Earth" comes from the old English word "ertha" meaning ground or land. The other planets were named after Roman gods or goddess. For the five visible to the naked eye, Mercury, Venus, Mars, Jupiter and Saturn they we named during ancient
+            times. This Roman method was also used after the discovery of Uranus and Neptune.</p>
+        <hr>
+        <h3>3). The gravity between the Earth and the Moon causes the tides on Earth.</h3>
+        <p>This effect on the Moon means it is tidally locked to Earth – its rotation period is the same as its orbit time so it always presents the same face to Earth.</p>
+        <hr>
+        <h3>4). The rotation of the Earth is gradually slowing down.</h3>
+        <p>The deceleration of the Earth’s rotation is very slow, approximately 17 milliseconds per hundred years. Eventually this will lengthen our days but it will take around 140 million years before our day will have increased from 24 to 25 hours.</p>
+        <hr>
+        <h3>5). Earth has a very powerful magnetic field.</h3>
+        <p>This field protects the planet from the effects of solar winds and is believed to be a result of the nickel-iron core of the planet combined with its rapid rotation.</p>
+        <hr>
+        <h3>6). The Earth has an Ozone Layer which protects it from harmful solar radiation.</h3>
+        <p> This shell is a special type of oxygen that absorbs most of the Sun’s powerful UV rays.</p>
+        <hr>
+        <h3>7). The first life on Earth developed in the oceans.</h3>
+        <p>through a process called abiogenesis or biopoiesis. This is a natural process in which life grows from non-living matter like simple organic compounds.</p>
+        <hr>
+        <h3>8). Earth has relatively few visible impact craters.</h3>
+        <p>compared with other solid bodies in our solar system. This is because Earth is geologically active and has processes like tectonics and erosion that reshape its surface.</p>
+        <hr>
+        <h3>Some other facts :</h3>
+        <ul style="padding-left: 3vw;">
+            <li>
+                <p>The large amount of oxygen on Earth comes from our plant life’s consumption of carbon dioxide during photosynthesis.</p>
+            </li>
+            <li>
+                <p>70% of the Earth’s surface is covered by water – the remainder consists of continents and islands which together have many lakes and other sources of water.</p>
+            </li>
+            <li>
+                <p>The highest point found on Earth is Mount Everest which reaches a height of 8.8 km.</p>
+            </li>
+            <li>
+                <p>The lowest point on Earth is called Challenger Deep and at 10.9 km below sea level, it is further than the peak of Mount Everest.</p>
+            </li>
+            <li>
+                <p>Earth has one of the most circular orbits of all the eight planets. Its axis of rotation is tilted 23.4° away from the perpendicular of its orbital plane, which produces the seasons we experience.</p>
+            </li>
+        </ul>
+        <hr>
+    </div>
+    <div class="two2"></div>
+</div>
+{% endblock %}

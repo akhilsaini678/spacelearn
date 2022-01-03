@@ -1,0 +1,126 @@
+<!-- This is Base File -->
+{% extends 'planets.html' %}
+{% load static %}
+
+<!-- This is Title -->
+{% block title %} Venus {% endblock %} {% block title1 %} Venus {% endblock %}
+
+<!-- This is image -->
+{% block main_image %}
+<img class="main_img" src="{% static 'Images/Venus_img.png' %}" alt="Venus Image" width="300px" height="300px" style="border-radius: 10px;"> {% endblock %}
+<!-- This is theroy part. -->
+
+{% block main_summary %} Venus is the second planet from the Sun. It is named after the Roman goddess of love and beauty, who was known as Aphrodite to the Ancient Greeks. As the brightest natural object in Earth's night sky after the Moon, Venus can
+cast shadows and can be, on rare occasions, visible to the naked eye in broad daylight.</p>
+<p> Venus has a thick, toxic atmosphere filled with carbon dioxide and it’s perpetually shrouded in thick, yellowish clouds of mostly sulfuric acid that trap heat, causing a runaway greenhouse effect. It’s the hottest planet in our solar system, even though
+    Mercury is closer to the Sun. Venus has crushing air pressure at its surface – more than 90 times that of Earth – similar to the pressure you'd encounter a mile below the ocean on Earth. {% endblock %}
+
+    {% block million %} million {% endblock %}
+
+    <!-- This is Table -->
+    <!-- Age -->
+    {% block age %} {{ data.2 }} {% endblock %}
+    <!-- Speed -->
+    {% block speed %} {{ data.3 }} {% endblock %}
+    <!-- Mass -->
+    {% block mass %} {{ data.4|safe }} {% endblock %}
+    <!-- Radius -->
+    {% block radius %} {{ data.5 }} {% endblock %} {% block radius1 %} 2439.7 {% endblock %}
+    <!-- Surface Temperature -->
+    {% block surface_temperature %} {{ data.6 }} {% endblock %}
+    <!-- Density -->
+    {% block density %} {{ data.7|safe }} {% endblock %}
+    <!-- Distance from Sun -->
+    {% block distance_from_sun %} {{ data.8 }} {% endblock %} {% block distance_from_sun1 %} 58 {% endblock %}
+    <!-- Gravity -->
+    {% block gravity %} {{ data.9|safe }} {% endblock %}
+    <!-- Number of Satellites -->
+    {% block number_of_satellites %} {{ data.10 }} {% endblock %}
+    <!-- Length of day -->
+    {% block length_of_day %} {{ data.11 }} {% endblock %}
+    <!-- Revolution -->
+    {% block revolution %} {{ data.12 }} {% endblock %}
+    <!-- Axis Tilt -->
+    {% block axis_tilt %} {{ data.13 }} {% endblock %}
+
+
+    
+    <!-- This is theroy part. -->
+    {% block content%}
+    <div class="mains2">
+        <div class="one2">
+            <h1 class="headleft">Formation</h1>
+            <p>
+                When the solar system settled into its current layout about 4.5 billion years ago, Venus formed when gravity pulled swirling gas and dust together to form the second planet from the Sun. Like its fellow terrestrial planets, Venus has a central core, a
+                rocky mantle and a solid crust.
+            </p>
+            <h1 class="headleft">Structure</h1>
+            <p>
+                Venus is in many ways similar to Earth in its structure. It has an iron core that is approximately 2,000 miles (3,200 kilometers) in radius. Above that is a mantle made of hot rock slowly churning due to the planet's interior heat. The surface is a thin
+                crust of rock that bulges and moves as Venus' mantle shifts and creates volcanoes.
+            </p>
+
+            <h1 class="headleft">Size and Distance</h1>
+            <p>
+                With a radius of 3,760 miles (6,052 kilometers), Venus is roughly the same size as Earth — just slightly smaller. From an average distance of 67 million miles (108 million kilometers), Venus is 0.7 astronomical units away from the Sun.
+            </p>
+            <h1 class="headleft">Orbit and Rotation</h1>
+            <p>
+                Venus is one of just two planets that rotate from east to west. Only Venus and Uranus have this "backwards" rotation. It completes one rotation in 243 Earth days — the longest day of any planet in our solar system. But the Sun doesn't rise and set each
+                "day" on Venus like it does on most other planets. On Venus, one day-night cycle takes 117 Earth days because Venus rotates in the direction opposite of its orbital revolution around the Sun. Its orbit around the Sun is the most circular
+                of any planet — nearly a perfect circle. Other planet's orbits are more elliptical, or oval-shaped.
+            </p>
+            <h1 class="headleft">Atmosphere</h1>
+            <p>
+                Venus' atmosphere consists mainly of carbon dioxide, with clouds of sulfuric acid droplets. The thick atmosphere traps the Sun's heat, resulting in surface temperatures higher than 880 degrees Fahrenheit (470 degrees Celsius). On the ground, it would
+                look like a very hazy, overcast day on Earth. And the atmosphere is so heavy it would feel like you were 1 mile (1.6 kilometers) deep underwater.
+            </p>
+
+            <h1 class="headleft">Composition of the Sun</h1>
+            <p>
+                The venus mostly consists of Carbon Dioxide and Nitrogen.
+                <ul class="list3">
+                    <li class="hydrogen">Carbon Di-oxide<br>96.5%</li>
+                    <li class="helium">Nitrogen<br>3.5%</li>
+                </ul>
+            </p>
+
+            <h1 class="headleft">Facts about the Venus</h1>
+            <h3>1). Venus is the second brightest natural object in the sky. </h3>
+            <p> The planet has an apparent magnitude of -3.8 to -4.6, which makes it visible on a bright, clear day. The Moon is the only other natural object that is brighter.</p>
+            <hr>
+            <h3>2). Venus is sometimes referred to as the “morning star” and “evening star”.</h3>
+            <p>This dates back to ancient civilizations who believed that Venus was in fact two distinct stars appearing in the sky. When the orbit of Venus overtakes Earth’s orbit, it changes from being visible at sunrise to being visible at sunset.</p>
+            <hr>
+            <h3>3). One day on Venus is longer than one year.</h3>
+            <p>Due to the slow rotation on its axis, it takes 243 Earth-days to complete one rotation. The orbit of the planet takes 225 Earth-days – making a year on Venus shorter on day on Venus.</p>
+            <hr>
+            <h3>4). Venus is sometimes called Earth’s sister planet.</h3>
+            <p>This is because their size is very similar (there is only a 638 km different in diameter) and Venus has around 81% of Earth’s mass.</p>
+            <hr>
+            <h3>5). Venus is the hottest planet in the solar system with an average surface temperature of 462°C (863°F).</h3>
+            <p>Also, Venus doesn’t tilt on its axis which means there are no seasons either. The atmosphere is a dense 96.5% carbon dioxide which traps heat and caused the greenhouse effect which evaporated any water sources billions of years ago.</p>
+            <hr>
+            <h3>6). The atmospheric pressure of Venus is 92 times stronger than Earth’s.</h3>
+            <p> This means that any small asteroids entering the atmosphere of Venus are crushed by the immense pressure, which is why there are no small surface craters on the planet. This pressure is equivalent to being around 1,000 km under Earth’s oceans.</p>
+            <hr>
+            <h3>7). Venus has a very weak magnetic field.</h3>
+            <p> This surprised scientists, who expected Venus to have a magnetic field similar in strength to Earth’s. One possible reason for this is that Venus has no solid inner core, or that its core is not cooling.</p>
+            <hr>
+            <h3>Some other facts</h3>
+            <ul style="padding-left: 3vw;">
+                <li>
+                    <p>Venus is the only planet in the Solar System to be named after a female figure.</p>
+                </li>
+                <li>
+                    <p>Venus orbits the sun in an ellipse, but its orbit is the closest to being a circle out of all the planets in the Solar System.</p>
+                </li>
+                <li>
+                    <p>Venus is the closest planet to Earth. When Venus is in line with Earth and the Sun, it is the closest planet to us, at an average distance of 41 million kilometers (25.5 million miles) away.</p>
+                </li>
+            </ul>
+            <hr>
+        </div>
+        <div class="two2"></div>
+    </div>
+    {% endblock %}

@@ -1,0 +1,86 @@
+<!-- This is base file -->
+{% extends 'navbar.html'%}
+{% load static %}
+
+<!-- This is content -->
+{% block content %}
+
+
+<div class="mains2">
+    <div class="one2">
+        <h1 style="font-size: 64px;text-align: center;" class="headmain">Milky Way</h1><br>
+        <img class="main_img" src="{% static 'Images/Milkyway_img.png' %}" alt=" Milky Way Image " width="500px " height="300px " style="border-radius: 10px; ">
+        <p class="heads ">The Milky Way is the galaxy that contains our Solar System, with the name describing the galaxy's appearance from Earth: a hazy band of light seen in the night sky formed from stars that cannot be individually distinguished by the naked eye.</p>
+    </div>
+    <div class="two2 "></div>
+</div>
+
+
+<div class="solar_system ">
+    <table class="reveal ">
+        <caption>Information</caption>
+        <tr>
+            <th class="reveal w3-mobile ">Age<br> 13.51 billion years
+            </th>
+            <th class="reveal w3-mobile ">Speed<br> 610 km per second
+            </th>
+            <th class="reveal w3-mobile ">Mass<br> 3 × 10<sup>42</sup> kg
+            </th>
+        </tr>
+        <tr>
+            <th class="reveal w3-mobile ">Radius<br>
+                <p id="radius_sun ">52850 lightyear</p>
+            </th>
+            <th class="reveal w3-mobile ">Volume<br> 8 x 10<sup>12</sup> lightyear<sup>3
+                </th>
+                <th class="reveal w3-mobile ">Density<br>
+                    4.42 x 10<sup>-19</sup> kg per m<sup>3</sup>
+            </th>
+        </tr>
+        <tr>
+            <th class="reveal w3-mobile ">Number of stars<br>
+                <p id="surface ">100-400 billion</p>
+            </th>
+        </tr>
+    </table>
+</div>
+
+
+<!-- This is theroy part. -->
+<div class="mains2 ">
+    <div class="one2 ">
+        <h1 class="headleft ">Facts about the Milky Way</h1>
+        <h3>1).Up until 1920, most astronomers believed that all of the stars in the universe were contained inside the Milky Way.</h3>
+        <p> Following this Great Debate, observations by Edwin Hubble proved that the Milky Way is in fact just one of billions of galaxies in the universe.</p>
+        <hr>
+        <h3>2). The oldest star in the Galaxy is HD 140283.</h3>
+        <p>Also known as the Methuselah star, and it is at least 13.6 billion years old.</p>
+        <hr>
+        <h3>3). The Milky Way as a whole is moving through space at a rate of approximately 600 km per second.</h3>
+        <p>It will will collide with the Andromeda Galaxy in around 3.75 billion years.</p>
+        <hr>
+        <h3>4). The Galaxy has a relatively low surface brightness.</h3>
+        <p>Which means that it is difficult to see from any brightly lit urban or suburban location but very prominent when the Moon is below the horizon.</p>
+        <hr>
+        <h3>Some other facts</h3>
+        <ul style="padding-left: 3vw; ">
+            <li>
+                <p>Inside the Milky Way are at least 100 billion planets and anywhere from 200-400 billion stars.</p>
+            </li>
+            <li>
+                <p>Surrounding the Galactic disk is a spheroidal halo of old stars and globular clusters – 90% of which lie within 100,000 light-years of the Galactic Center.</p>
+            </li>
+            <li>
+                <p>The Milky Way and the Andromeda Galaxy are part of a binary system of giant spiral galaxies belonging to a group of 50 closely bound galaxies called the Local Group.</p>
+            </li>
+            <li>
+                <p>
+                    If the Milky Way were reduced in diameter to a width of 100 m, the solar system would be no more than 1 mm in width.
+                </p>
+            </li>
+        </ul>
+        <hr>
+    </div>
+    <div class="two2 "></div>
+</div>
+{% endblock %}

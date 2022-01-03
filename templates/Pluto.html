@@ -1,0 +1,151 @@
+<!-- This is Base File -->
+{% extends 'planets.html' %}
+{% load static %}
+
+<!-- This is Title -->
+{% block title %} Pluto {% endblock %} {% block title1 %} Pluto {% endblock %}
+
+
+<!-- This is image -->
+{% block main_image %}
+<img class="main_img" src="{% static 'Images/Pluto_img.png' %}" alt="Pluto Image" width="300px" height="300px" style="border-radius: 10px;"> {% endblock %}
+<!-- This is theroy part. -->
+
+{% block main_summary %} Pluto is a dwarf planet in the Kuiper belt, a ring of bodies beyond the orbit of Neptune. It was the first and the largest Kuiper belt object to be discovered. After Pluto was discovered in 1930, it was declared to be the ninth
+planet from the Sun. {% endblock %}
+
+
+{% block million %} billion {% endblock %}
+
+    <!-- This is Table -->
+    <!-- Age -->
+    {% block age %} {{ data.2 }} {% endblock %}
+    <!-- Speed -->
+    {% block speed %} {{ data.3 }} {% endblock %}
+    <!-- Mass -->
+    {% block mass %} {{ data.4|safe }} {% endblock %}
+    <!-- Radius -->
+    {% block radius %} {{ data.5 }} {% endblock %} {% block radius1 %} 2439.7 {% endblock %}
+    <!-- Surface Temperature -->
+    {% block surface_temperature %} {{ data.6 }} {% endblock %}
+    <!-- Density -->
+    {% block density %} {{ data.7|safe }} {% endblock %}
+    <!-- Distance from Sun -->
+    {% block distance_from_sun %} {{ data.8 }} {% endblock %} {% block distance_from_sun1 %} 58 {% endblock %}
+    <!-- Gravity -->
+    {% block gravity %} {{ data.9|safe }} {% endblock %}
+    <!-- Number of Satellites -->
+    {% block number_of_satellites %} {{ data.10 }} {% endblock %}
+    <!-- Length of day -->
+    {% block length_of_day %} {{ data.11 }} {% endblock %}
+    <!-- Revolution -->
+    {% block revolution %} {{ data.12 }} {% endblock %}
+    <!-- Axis Tilt -->
+    {% block axis_tilt %} {{ data.13 }} {% endblock %}
+    
+    
+{% block content %}
+<div class="mains2">
+    <div class="one2">
+        <h1 class="headleft">Formation</h1>
+        <p>
+            Dwarf planet Pluto is a member of a group of objects that orbit in a disc-like zone beyond the orbit of Neptune called the Kuiper Belt. This distant realm is populated with thousands of miniature icy worlds, which formed early in the history of our solar
+            system about 4.5 billion years ago. These icy, rocky bodies are called Kuiper Belt objects, transneptunian objects, or plutoids.
+        </p>
+        <h1 class="headleft">Structure</h1>
+        <p>
+            Pluto is about two-thirds the diameter of Earth's moon and probably has a rocky core surrounded by a mantle of water ice. Interesting ices like methane and nitrogen frost coat its surface. Due to its lower density, Pluto's mass is about one-sixth that
+            of Earth's moon.
+        </p>
+
+        <h1 class="headleft">Size and Distance</h1>
+        <p>
+            With a radius of 715 miles (1,151 kilometers), Pluto is about 1/6 the width of Earth. If Earth was the size of a nickel, Pluto would be about as big as a popcorn kernel.
+        </p>
+        <p>From an average distance of 3.7 billion miles (5.9 billion kilometers), Pluto is 39 astronomical units away from the sun. One astronomical unit (abbreviated as AU), is the distance from the sun to Earth. From this distance, it takes sunlight 5.5
+            hours to travel from the sun to Pluto.
+        </p>
+        <p>If you were to stand on the surface of Pluto at noon, the sun would be 1/900 the brightness it is here on Earth, or about 300 times as bright as our full moon. There is a moment each day near sunset here on Earth when the light is the same brightness
+            as midday on Pluto. Find out when you can experience "Pluto time" where you live.
+        </p>
+        <h1 class="headleft">Orbit and Rotation</h1>
+        <p>
+            Pluto's orbit around the sun is unusual compared to the planets: it's both elliptical and tilted. Pluto's 248-year-long, oval-shaped orbit can take it as far as 49.3 astronomical units (AU) from the sun, and as close as 30 AU. (One AU is the mean distance
+            between Earth and the sun: about 93 million miles or 150 million kilometers.) But on average, Pluto is 3.7 billion miles (5.9 billion kilometers) away from the sun, or 39 AU.
+        </p>
+        <p>From 1979 to 1999, Pluto was near perihelion, when it is closest to the sun. During this time, Pluto was actually closer to the sun than Neptune.
+        </p>
+        <p>One day on Pluto takes about 153 hours. Its axis of rotation is tilted 57 degrees with respect to the plane of its orbit around the sun, so it spins almost on its side. Pluto also exhibits a retrograde rotation; spinning from east to west like
+            Venus and Uranus.
+        </p>
+        <h1 class="headleft">Atmosphere</h1>
+        <p>
+            Pluto has a thin, tenuous atmosphere that expands when it comes closer to the sun and collapses as it moves farther away—similar to a comet. The main constituent is molecular nitrogen, though molecules of methane and carbon monoxide have also been detected.
+        </p>
+        <p>When Pluto is close to the sun, its surface ices sublimate (changing directly from solid to gas) and rise to temporarily form a thin atmosphere. Pluto's low gravity (about six percent of Earth's) causes the atmosphere to be much more extended
+            in altitude than our planet's atmosphere. Pluto becomes much colder during the part of each year when it is traveling far away from the sun. During this time, the bulk of the planet's atmosphere may freeze and fall as snow to the surface.
+        </p>
+
+        <h1 class="headleft">Composition of the Pluto</h1>
+        <p>
+            Pluto's atmosphere is roughly 90% Nitrogen, and 10% other complex molecules such as methane. The composition of Pluto's atmosphere is very similar to the Earth's which is also 78% Nitrogen.
+        </p>
+        <p>
+            <ul class="list10">
+                <li class="hydrogen">Nitrogen<br>90%</li>
+                <li class="helium">Methane<br>10%</li>
+            </ul>
+        </p>
+
+        <h1 class="headleft">Facts about the Pluto</h1>
+        <h3>1). Pluto was discovered on February 18th, 1930 by Clyde Tombaugh of the Lowell Observatory.</h3>
+        <p> In the 76 years between its discovery and subsequent reclassification as a dwarf planet, the planet completed under one third of its orbit around the Sun.</p>
+        <hr>
+        <h3>2). In 2006, Pluto was reclassified from a planet to a dwarf planet.</h3>
+        <p>This happened after the IAU formalised the definition of a planet as “A planet is a celestial body that (a) is in orbit around the Sun, (b) has sufficient mass for its self-gravity to overcome rigid body forces so that it assumes a hydrostatic
+            equilibrium (nearly round) shape, and (c) has cleared the neighbourhood around its orbit.“.</p>
+        <hr>
+        <h3>3). The planet is named for Pluto, the Roman god of the underworld.</h3>
+        <p>the Roman alternative for the Greek god Hades. The name was proposed by an eleven year-old schoolgirl from Oxford, England by the name of Venetia Burney.</p>
+        <hr>
+        <h3>4). Pluto has five known moons.</h3>
+        <p>These are Charon, Styx, Nix, Kerberos and Hydra. The latter two moons were known as S/2011 (134340) 1 and S/2012 (134340) 1 before they were officially named.</p>
+        <hr>
+        <h3>5). Pluto is smaller than many moons.</h3>
+        <p>When it was first discovered, Pluto’s small size surprised the scientific community who predicted it would be as large as Jupiter. The moons Ganymede, Titan, Callisto, Io, Europa, Triton, and the Earth’s moon are all larger than Pluto. It has
+            66% of the Moon’s diameter and just 18% of its mass.</p>
+        <hr>
+        <h3>6). Sunlight on Pluto has the same intensity as moonlight on Earth.</h3>
+        <p> This is because it located so far from the Sun in the outer solar system – approximately 5,945,900,000 km.</p>
+        <hr>
+        <h3>7). The first spacecraft will visit Pluto in July 2015.</h3>
+        <p>The New Horizons mission, launched in 2006 did a Pluto flyby on July 14th, 2015, on its way to the distant Kuiper Belt after almost a decade of flight.</p>
+        <hr>
+        <h3>8). The orbit of Pluto is chaotic and unpredictable. </h3>
+        <p>Scientists are able to predict the location of Pluto along its orbit path for the next 10-20 million years – beyond that it is unknown.
+        </p>
+        <hr>
+        <h3>Some other facts :</h3>
+        <ul style="padding-left: 3vw;">
+            <li>
+                <p>It took sunlight over 3 hours to reach the New Horizons mission flying to Pluto.</p>
+            </li>
+            <li>
+                <p>Some of the ashes of Clyde Tombaugh, the astronomer who discovered Pluto, are onboard the New Horizons probe that went to Pluto and beyond.</p>
+            </li>
+            <li>
+                <p>Pluto is expected to have a solid rocky core, surrounded by a water ice mantle and a frozen nitrogen surface.</p>
+            </li>
+            <li>
+                <p>Pluto has an atmosphere sometimes. When Pluto is closer to the Sun on its elliptical orbit path the surface ice thaws and forms a thin atmosphere of nitrogen, methane and carbon monoxide. As it travels away from the Sun this then freezes
+                    back into its solid state.</p>
+            </li>
+            <li>
+                <p>It takes Pluto 246.04 Earth years to orbit the Sun.</p>
+            </li>
+        </ul>
+        <hr>
+    </div>
+    <div class="two2"></div>
+</div>
+{% endblock %}
