@@ -15,7 +15,8 @@ rgb(50, 200, 110);
     width: 96vw;
     background-color: #3CA55C;
     margin: auto;
-    box-shadow: 0 0 12px rgb(36, 36, 36);
+    box-shadow: 0 0 10px #3CA55C;
+    /* box-shadow: 0 0 12px rgb(36, 36, 36); */
     display: block;
     color: white;
     border-radius: 10px;
