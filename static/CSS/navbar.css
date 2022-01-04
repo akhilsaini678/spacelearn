@@ -4,6 +4,11 @@
     line-height: 1.6;
 }
 
+body 
+{
+  background-image: linear-gradient(to right,#16222A,#3A6073);
+}
+
 .solarsystem_menu {
     transition: 0.5s;
     overflow: hidden;
