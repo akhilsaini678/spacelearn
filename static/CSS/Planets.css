@@ -88,6 +88,7 @@ rgb(50, 200, 110);
     margin: auto;
     margin-top: 36px;
     text-align: justify;
+    box-shadow: 0 0 10px #3CA55C;
 }
 
 .mains2 p {
