@@ -62,9 +62,13 @@
 
 .one {
     flex: 0.85;
-    box-shadow: 0 0 10px #3CA55C;
     padding: 2vw;
     border-radius: 10px;
+}
+
+.inside_one {
+    border-radius: 10px;
+    box-shadow: 0 0 10px #3CA55C;
 }
 
 .two {
