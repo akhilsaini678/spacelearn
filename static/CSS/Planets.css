@@ -88,7 +88,6 @@ rgb(50, 200, 110);
     margin: auto;
     margin-top: 36px;
     text-align: justify;
-    box-shadow: 0 0 10px #3CA55C;
 }
 
 .mains2 p {
@@ -99,9 +98,10 @@ rgb(50, 200, 110);
 
 .one2 {
     flex: 0.85;
-    box-shadow: 0 0 10px rgb(36, 36, 36);
     padding: 2vw;
     border-radius: 10px;
+    box-shadow: 0 0 10px #3CA55C;
+
 }
 
 .two2 {
