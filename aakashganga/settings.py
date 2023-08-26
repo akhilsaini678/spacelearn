@@ -26,7 +26,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["*","aakashganga.herokuapp.com","127.0.0.1"]
+ALLOWED_HOSTS = ["aakashganga.onrender.com","aakashganga.herokuapp.com","127.0.0.1"]
 
 
 # Application definition
@@ -136,4 +136,4 @@ EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
 
 
-CSRF_TRUSTED_ORIGINS = ['https://aakashganga.herokuapp.com']
+CSRF_TRUSTED_ORIGINS = ['https://aakashganga.onrender.com','https://aakashganga.herokuapp.com']
